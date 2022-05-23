@@ -47,7 +47,7 @@ func main() {
 
 	result := []areaInterface{firstTriangle, firstCircle, firstRectangle}
 
-	// we have set the interface area() and provides it with two different values
+	// we have set the interface area() and provided it with two different values
 	// now, we need to print those values using any loop
 
 	for _, areaInterfaceValue := range result {
