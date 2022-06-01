@@ -9,5 +9,5 @@ type User struct {
 }
 
 func (b *User) TableName() string {
-	return "user"
+	return "UserDetail"
 }

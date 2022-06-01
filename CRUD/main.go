@@ -6,6 +6,7 @@ import (
 	"CRUD/Routes"
 	"fmt"
 
+	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
 )
 
@@ -16,6 +17,7 @@ func main() {
 	if err != nil {
 		fmt.Println("Status:", err)
 	}
+	fmt.Println(Config.DB)
 	defer Config.DB.Close()
 	Config.DB.AutoMigrate(&Models.User{})
 	r := Routes.SetupRouter()
